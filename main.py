@@ -8,7 +8,7 @@ from scipy.signal import find_peaks
 from ultralytics import YOLO  # Ensure YOLO library is installed
 
 # Load the pre-trained YOLO model (classification)
-yolo_model = YOLO("yolov8n-cls.pt")  # Do NOT change this to a detection model
+yolo_model = YOLO("yolov8n-cls.pt")  # change this to a better DETECTION model like DETECTRON2 or LLMs if possible for better detection/labelling
 
 def classify_objects(image, bounding_boxes):
     """
